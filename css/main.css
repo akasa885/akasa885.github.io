@@ -1,0 +1,93 @@
+:root{
+    --main: #8263a9;
+    --base: #f4f4f4;
+    --white: #ffffff;
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2rem;   
+}
+
+*, body{
+    padding: 0;
+    margin: 0;
+}
+
+
+section.banner{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: var(--base);
+    padding-bottom: 0;    
+}
+
+section.banner .flow-bg::before{
+    content: "";
+    height: 10px;
+    transform: skewX(20deg);
+}
+
+section.banner .flow-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--main);
+    height: 50vh;
+    width: 100%;
+    border-radius: 50%;
+    transform: translateY(calc(-50vh/2));        
+}
+
+section.banner .profileBX{
+
+}
+
+section.banner .bottom_side{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;    
+}
+
+section.banner .bottom_side.stickyonTop{
+    position: fixed;
+    top: 0;
+    bottom: unset;
+    z-index: 999;
+}
+
+ul.menu{    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: var(--main);
+    color: var(--white);   
+}
+
+ul.menu li{
+    list-style: none;
+    padding: .75em .9525em;
+}
+
+ul.menu li a{
+    font-size: .8753rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.menu-center{
+    justify-content: center;
+}
