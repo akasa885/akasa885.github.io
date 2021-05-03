@@ -1,0 +1,173 @@
+@keyframes floating {
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(.5rem);
+    }   
+    40%{
+        transform: translateX(-.5rem);
+    }
+    60%{
+        transform: translateX(.5rem);
+    }
+    80%{
+        transform: translateX(-.5rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes flowIntro {
+    0%, 50%, 75%, 90%{
+        height: 100vh;
+        border-radius: 0;
+        transform: translateY(0);
+    }
+
+    95%{
+        height: 50vh;        
+        transform: translateY(calc(-50vh/2));
+    }
+    100%{
+        border-radius: 50%;
+        height: 50vh;        
+        transform: translateY(calc(-50vh/2));
+    }
+}
+
+@keyframes popIn {
+    0% {
+        width: 0px;
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+    }
+    50% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 45px;
+    }
+     65% {
+        width: 7px;
+        height: 7px;
+        bottom: 0px;
+        width: 15px
+     }
+     80% {
+        width: 10px;
+        height: 10px;
+        bottom: 20px
+     }
+    100% {
+        width: 7px;
+        height: 7px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 13px;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes swipeIn {
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0%{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    20%,30%{
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+    35%, 90%{
+        opacity: 1;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-30px);        
+    }
+}
+
+@keyframes fadeInOut {
+    0%{
+        opacity: 0;     
+    }
+    30%, 90%{
+        opacity: 1;        
+    }
+    100%{
+        opacity: 0;        
+    }
+}
+
+@keyframes slideInOut {
+    0%{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    30%, 90%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+}
+
+@keyframes mainBlock {
+    0% {
+      width: 0%;
+      left: 0;
+  
+    }
+    50% {
+      width: 100%;
+      left: 0;
+  
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+}
+
+@keyframes secBlock {
+    0% {
+      width: 0%;
+      left: 0;      
+  
+    }
+    50% {
+      width: 100%;
+      left: 0;      
+  
+    }
+    100% {
+      width: 0;
+      left: 100%;      
+    }
+}

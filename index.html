@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/WebFont/font.css">
+    <link rel="stylesheet" href="css/keyftames_animation.css">
+    <link rel="stylesheet" href="css/main.css">    
     <title>Profil Rizki Akbar</title>
 </head>
 <body>
@@ -12,25 +13,40 @@
 
     </div>
     <section class="banner">
-        <div class="flow-bg"></div>
+        <div class="flow-bg">
+            <div class="title title1">
+                <span class="block fst_block"></span>
+                <h1>Hey you there!</h1>
+            </div>            
+            <div class="title title2">
+                <div class="block sec_block"></div>
+                <h1>Welcome..!</h1>
+            </div>
+            <div class="title title3">
+                <h1>Create your own website ?</h1>
+            </div>
+        </div>
         <div class="slide-throw">
             <div class="profileBx">
-                <img src="" alt="profile">
+                <img src="idoly_pride_show.jpg" alt="profile">
                 <div class="words">
-                    <p>"Nobody knows who are you is"</p>
+                    <p>"The World God Only Knows"</p>
                 </div>
             </div>
         </div>        
         <div class="bottom_side">            
-            <ul class="menu menu-center">
+            <ul class="menu menu-center" id="mapMenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">My Skill</a></li>
                 <li><a href="#">Official Project</a></li>
-                <li><a href="#">My Project</a></li>
+                <li><a href="https://github.com/akasa885" target="__blank">Personal Project</a></li>
                 <li><a href="#">Promotional</a></li>
                 <li><a href="#">Contact Me</a></li>         
             </ul>
+            <button class="menu-toggle menu-center" data-target="#mapMenu" aria-expanded="false" aria-label="toggle menu" aria-controls="mapMenu" type="button">
+                <span class="menu-toggler-icon">Lala</span>
+            </button>
         </div>
     </section>
 </body>
